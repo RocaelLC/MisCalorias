@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Calorías y Proteínas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Calorías y Proteínas</h1>
+        <label for="gender">Género:</label>
+        <select id="gender">
+            <option value="male">Hombre</option>
+            <option value="female">Mujer</option>
+        </select>
+
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" placeholder="Ingresa tu peso en kg">
+
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height" placeholder="Ingresa tu altura en cm">
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" placeholder="Ingresa tu edad">
+
+        <label for="activity">Nivel de actividad:</label>
+        <select id="activity">
+            <option value="1.2">Sedentario</option>
+            <option value="1.375">Ligero (1-3 días de ejercicio)</option>
+            <option value="1.55">Moderado (3-5 días de ejercicio)</option>
+            <option value="1.725">Activo (6-7 días de ejercicio)</option>
+            <option value="1.9">Muy activo (ejercicio intenso)</option>
+        </select>
+
+        <label for="goal">Objetivo:</label>
+        <select id="goal">
+            <option value="gain">Subir de peso (ganar masa muscular)</option>
+            <option value="lose">Bajar grasa (definir)</option>
+        </select>
+
+        <button onclick="calculate()">Calcular</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
